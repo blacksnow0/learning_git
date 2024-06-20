@@ -1,6 +1,14 @@
 .App {
   text-align: center;
-  padding: 0 10px;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+section {
+  padding: 50px 20px;
+  margin: 10px 0;
 }
 
 nav {
@@ -8,19 +16,34 @@ nav {
   padding: 10px;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-nav ul li {
+.menu-icon {
+  display: none;
+  font-size: 30px;
   color: white;
   cursor: pointer;
 }
 
-nav ul li:hover {
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.nav-links li {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
   text-decoration: underline;
 }
 
@@ -28,27 +51,30 @@ footer {
   background-color: #333;
   color: white;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  .App {
-    padding: 0;
+  .menu-icon {
+    display: block;
   }
 
-  nav ul {
+  .nav-links {
     flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none;
   }
 
-  nav ul li {
-    padding: 10px 0;
+  .nav-links.open {
+    display: flex;
   }
 
-  footer {
-    padding: 20px;
+  .nav-links li {
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
   }
 }
