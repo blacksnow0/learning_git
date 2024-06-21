@@ -11,13 +11,14 @@ const Contact = () => {
       </p>
       <div className="contact-info">
         <p>
-          <strong>Address:</strong> 123 Hotel Street, City, Country
+          <strong>Address:</strong> Near Seshnetra Ashram Mana Road, Badrinath,
+          India
         </p>
         <p>
-          <strong>Phone:</strong> +123 456 7890
+          <strong>Phone:</strong> +91-9411565459
         </p>
         <p>
-          <strong>Email:</strong> info@hotel.com
+          <strong>Email:</strong> hotelnewurvashi1@gmail.com
         </p>
       </div>
       <form className="contact-form">
